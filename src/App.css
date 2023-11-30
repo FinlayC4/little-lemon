@@ -11,6 +11,15 @@ header {
   justify-content: space-between;
 }
 
+footer {
+  padding: 40px 30px;
+  background-color: #EDEFEE;
+}
+
+section {
+  padding: 40px 30px;
+}
+
 nav {
   display: flex;
   justify-content: right;
@@ -48,7 +57,6 @@ img {
 }
 
 #hero-section {
-  padding: 40px 30px;
   background-color: #495E57;
 }
 
@@ -62,8 +70,9 @@ h1 {
   color: #F4CE14;
 }
 
-h2 {
-  font-weight: 400;
+.section-title {
+  font-size: 44px;
+  font-weight: 500;
 }
 
 #hero-subheading {
@@ -91,46 +100,38 @@ h2 {
   justify-content: right;
 }
 
-#highlights-section {
-  padding: 0px 30px;
-  margin-bottom: 60px;
+#specials-section {
+  padding-bottom: 60px;
 }
 
-#highlights-container {
+#specials-container {
   max-width: 1000px;
   margin: auto;
-  margin-top: 40px;
 }
 
-#highlights-header {
+#specials-header {
   display: flex;
   justify-content: space-between;
 }
 
 #card-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
-  overflow-x: auto;
-}
-
-#highlights-title {
-  font-size: 44px;
-  font-weight: 500;
 }
 
 .dish-card {
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  flex: 1;
   font-family: "Karla", sans-serif;
   background-color: #EDEFEE;
+  flex: 1;
+  border-radius: 10px;
+  /*box-shadow: 0px 0px 4px 1px rgb(226, 226, 226);*/
+  /*margin: 5px; /*should match with blur + spread*/
 }
 
 .dish-card-image {
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
-
 }
 
 .dish-card-image img {
@@ -142,12 +143,11 @@ h2 {
 }
 
 .dish-card-text {
-  background-color: #EDEFEE;
-  padding: 25px;
+  padding: 25px 25px 35px 25px;
 }
 
 .dish-card-price {
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .dish-card-header {
@@ -171,15 +171,19 @@ h2 {
 
 #testimonials-section {
   background-color: #EDEFEE;
-  padding: 40px 0px;
 }
 
 
 #testimonials-container {
-  display: flex;
   max-width: 1000px;
   margin: auto;
-  gap: 50px;
+}
+
+#testimonials {
+  margin-top: 40px;
+  gap: 30px 40px;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
 }
 
 .testimonial {
@@ -212,6 +216,157 @@ h2 {
 .checked {
   color: #EE9972;
 }
+
+#reserve-table-button {
+  margin-top: 25px;
+  background-color: #F4CE14;
+  color: black;
+  padding: 10px 20px 10px 20px;
+  border-radius: 6px;
+  border: none;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#online-menu-button {
+  background-color: #F4CE14;
+  color: black;
+  padding: 15px 25px 15px 25px;
+  border-radius: 6px;
+  border: none;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  align-self: center;
+}
+
+#about-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  gap: 80px;
+}
+
+#about-subheading {
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+#about-container > * {
+  flex: 1;
+}
+
+#about-image {
+  width: 100%;
+}
+
+#footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#footer-container p {
+  font-size: 14px;
+}
+
+.footer-nav-heading {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#reserve-container {
+  margin: auto;
+  max-width: 1000px;
+}
+
+.date-picker, .time-picker {
+  background-color: white;
+}
+
+.datetime-picker {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.datetime-picker input {
+  display: block;
+}
+
+#reserve-section {
+  background-color: #495E57;
+}
+
+#reserve-form {
+  margin-top: 30px;
+}
+
+#reserve-form label {
+  display: block;
+  color: white;
+  font-family: "Markazi Text", serif;
+  font-size: 22px;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+#reserve-form .input-group input, select {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Karla", sans-serif;
+}
+
+#reserve-title {
+  font-size: 44px;
+  color: #F4CE14;
+  font-weight: 500;
+}
+
+#reserve-section p {
+  color: white;
+}
+
+#reserve-description {
+  margin-top: -5px;
+}
+
+#reserve-button {
+  border: none;
+  margin-top: 10px;
+  background-color: #F4CE14;
+  font-weight: 500;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+}
+
+#reservation-confirmed-section {
+  background-color: #495E57;
+  padding: 30px 30px;
+}
+
+#reservation-confirmed-container {
+  margin: auto;
+  width: 1000px;
+  color: white;
+}
+
+#reservation-confirmed-heading {
+  color: #F4CE14;
+  font-weight: 500;
+  font-size: 44px;
+}
+
+
 
 
 
@@ -264,4 +419,17 @@ h2 {
   #hero-image {
     display: none;
   }
+
+  #card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
+
+@media only screen and (max-width: 550px) {
+
+  #card-container {
+    grid-template-columns: 1fr;
+  }
+  
 }

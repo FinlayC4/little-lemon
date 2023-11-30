@@ -5,7 +5,7 @@ function Nav() {
       {
         navItems.map((item) => {
           if (item === "Home") {
-            return <a style={{backgroundColor: "#F4CE14", padding: "5px 10px", borderRadius: "30px"}} href={item.toLowerCase()}>{item}</a>;
+            return <a style={{backgroundColor: "#F4CE14", padding: "5px 10px", borderRadius: "30px"}} href="/">{item}</a>;
           } else {
             return <a href={item.toLowerCase()}>{item}</a>;
           }
